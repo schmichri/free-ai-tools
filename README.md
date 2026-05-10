@@ -20,8 +20,8 @@
 
 > [!NOTE]  
 > Please don't abuse these services, else we might lose them for everyone.
-> The numebr becomes 550+ when you add all the models and sub services of all the tools provided
-> When raising issues or pull requests please dont add your own paid,expensive personal projets
+> The numebr becomes 550+ when you add all the models and sub services of all the tools provided.
+> When raising issues or pull requests please dont add your own paid,expensive personal projets.
 
 > [!WARNING]  
 > **April 2026 Model Tier Changes:** Major providers (OpenAI, Anthropic, Google) have restricted flagship models (GPT-5.4, Claude Opus 4.6, Gemini 3.1 Pro) to paid tiers. Free tiers now get lighter models (GPT-4o, Claude Sonnet/Haiku, Gemini Flash). Entries marked with `[verify]` need confirmation.
