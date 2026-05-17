@@ -144,6 +144,14 @@ If this repo helped you build something or saved you money:
 | [Windsurf](#windsurf) | OpenAI, Anthropic, Google, xAI | 25 credits/month | Required |
 | [Qoder](#qoder) | Qwen3.6-Plus, Qwen3-Coder-480B, Claude, GPT, Gemini | Unlimited completions + limited chat | No |
 
+### AI GitHub PR Review Tools
+
+| Tool | Starting Price | Free Tier | Features | Credit Card |
+|------|----------------|-----------|-----------|-------------|
+| [PrixAI](www.prixai.xyz) | Free / $10 paid plan | Unlimited reviews | Auto-fix PRs, issue planning | No |
+| [Bito](#bito) | Free / Paid plans | Unlimited reviews | AI PR reviews | No |
+| [Sourcery](#sourcery) | ~$12/month | Free trial available | Code quality reviews | No |
+
 ### CLI Coding Tools with Free Pro-Grade Access
 
 | Tool | Pro-grade Models | Free Tier Limit | Credit Card |
