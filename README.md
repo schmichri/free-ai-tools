@@ -149,7 +149,7 @@ If this repo helped you build something or saved you money:
 | Tool | Starting Price | Free Tier | Features | Credit Card |
 |------|----------------|-----------|-----------|-------------|
 | [PrixAI](www.prixai.xyz) | Free / $10 paid plan | Free trial available | Unlimited reviews Auto-fix PRs, issue planning | No |
-| [Bito](#bito) | Free / Paid plans | Free trial available | AI PR reviews/Unlimited reviews | No |
+| [Bito](#bito) | Free / $25 paid plans | Free trial available | AI PR reviews/Unlimited reviews | No |
 | [Sourcery](#sourcery) | ~$12/month | Free trial available | Code quality reviews | No |
 
 ### CLI Coding Tools with Free Pro-Grade Access
