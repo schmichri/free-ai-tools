@@ -63,6 +63,9 @@ If this repo helped you build something or saved you money:
 
 ## 📅 Updates
 
+**2026-05-18**
+- ✨ added github PR review tools
+
 **2026-04-12**
 - ✨ added a website for easy navigation
 ---
