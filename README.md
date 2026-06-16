@@ -1,7 +1,7 @@
 # Free AI Tools
 
 ![Stars](https://img.shields.io/github/stars/ShaikhWarsi/free-ai-tools?style=social)
-![Last Updated](https://img.shields.io/badge/updated-April%2011%2C%202026-brightgreen)
+![Last Updated](https://img.shields.io/badge/updated-June%2016%2C%202026-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)
 
@@ -10,11 +10,12 @@
 ### What's Inside
 - ✅ Free GPT-5 / Claude / Gemini API access
 - 🤖 Coding copilots and AI-native IDEs (Cursor, Trae, Windsurf)
-- 💰 Cheapest AI APIs ($0.10-0.50 per 1M tokens)
+- 💰 Cheapest AI APIs ($0.08-0.50 per 1M tokens)
 - 📚 RAG stack tools (vector DBs, embeddings, frameworks)
 - 🎯 Agent frameworks and automation tools
 - 🔒 Local models for privacy (Ollama, Llama, Qwen)
 - 🏗️ Production-ready stack configurations
+- 🆕 Claude Opus 4.7/4.8, Sonnet 4.6, Haiku 4.5 — GitHub Copilot AI Credits — Windsurf Max — Trae Ultra
 
 **Goal:** Help developers build AI apps without paying $200/month.
 
@@ -25,6 +26,8 @@
 
 > [!WARNING]  
 > **April 2026 Model Tier Changes:** Major providers (OpenAI, Anthropic, Google) have restricted flagship models (GPT-5.4, Claude Opus 4.6, Gemini 3.1 Pro) to paid tiers. Free tiers now get lighter models (GPT-4o, Claude Sonnet/Haiku, Gemini Flash). Entries marked with `[verify]` need confirmation.
+>
+> **June 2026 Pricing & Billing Updates:** Windsurf switched to a quota-based model (Pro $20, Teams $40, new Max $200) on Mar 18. Trae moved to a 5-tier token system (Lite $3, Pro $10, Pro+ $30, Ultra $100) on Feb 24. Qoder's 50% launch promo ended Apr 30 — standard pricing is now Pro $20, Pro+ $60, Ultra $200. GitHub Copilot moved to usage-based billing (GitHub AI Credits) on Jun 1, with a new Max tier at $100. Anthropic added Claude Opus 4.7/4.8, Sonnet 4.6, and Haiku 4.5.
 
 ---
 
@@ -62,6 +65,11 @@ If this repo helped you build something or saved you money:
 ---
 
 ## 📅 Updates
+
+**2026-06-16**
+- 🔄 Pricing refresh: Windsurf (Mar 18), Trae (Feb 24), Qoder (Apr 30), GitHub Copilot (Jun 1) billing changes
+- ➕ Added GitHub Copilot Max tier ($100/mo, $200 AI Credits) and Claude Haiku 4.5
+- 🐛 Fixed stale Cursor / Qoder / Windsurf / GitHub Copilot pricing throughout
 
 **2026-05-18**
 - ✨ added github PR review tools
@@ -134,17 +142,17 @@ If this repo helped you build something or saved you money:
 | [Cerebras](#cerebras) | 4 | 1M tokens/day | No |
 | [Cohere](#cohere) | 14 | 1K req/month | No |
 | [Mistral La Plateforme](#mistral-la-plateforme) | 10+ | 1B tokens/month | No |
-| [GitHub Models](#github-models) | 30+ | 50 chat + 2K completions/month | No |
-| [SambaNova](#sambanova-cloud) | 13 | $5 for 3 months | No |
-| [Hyperbolic](#hyperbolic) | 13 | $1 trial | No |
+| [GitHub Models](#github-models) | 30+ | 50 chat + 2K completions/month [verify] | No |
+| [SambaNova](#sambanova-cloud) | 13 | $5 for 3 months [verify] | No |
+| [Hyperbolic](#hyperbolic) | 13 | $1 trial [verify] | No |
 
 ### AI-Powered IDEs with Free Pro-Grade Access
 
 | IDE | Pro-grade Models | Free Tier Limit | Credit Card |
 |-----|------------------|-----------------|-------------|
-| [Cursor](#cursor) | GPT-5.1-Codex-Max | Limited free tier | No |
-| [Trae](#trae) | DeepSeek V4, GPT-4.1 (Claude removed Nov 2025) | 10 fast + 50 slow/month | No |
-| [Windsurf](#windsurf) | OpenAI, Anthropic, Google, xAI | 25 credits/month | Required |
+| [Cursor](#cursor) | GPT-5.1-Codex-Max | Limited free tier (Hobby) | No |
+| [Trae](#trae) | DeepSeek V4, GPT-4.1 (Claude removed Nov 2025) | 5,000 auto-completions/month | No |
+| [Windsurf](#windsurf) | OpenAI, Anthropic, Google, xAI | Light quota (daily/weekly) | No |
 | [Qoder](#qoder) | Qwen3.6-Plus, Qwen3-Coder-480B, Claude, GPT, Gemini | Unlimited completions + limited chat | No |
 
 ### AI GitHub PR Review Tools
@@ -161,8 +169,8 @@ If this repo helped you build something or saved you money:
 |------|------------------|-----------------|-------------|
 | [Gemini CLI](#gemini-cli) | Gemini 3.1 Flash [verify: Pro paid] | 100-250 req/day | No |
 | [Rovo Dev CLI](#rovo-dev-cli) | Claude Sonnet 4 [verify], GPT-5 preview [verify] | 5M tokens/day | No |
-| [Warp](#warp) | GPT-4.1, Claude Opus 4.1 [verify] | 150 credits/month | No |
-| [GitHub Copilot](#github-copilot) | GPT-4.1, Claude Opus | 50 chat + 2K completions/month | No |
+| [Warp](#warp) | GPT-4.1, Claude Opus 4.1 [verify] | 150 credits/month (first 2 mo), 75/mo after | No |
+| [GitHub Copilot](#github-copilot) | GPT-4.1, Claude Opus, Gemini | 50 chat + 2K completions/month [verify] | No |
 | [Jules](#jules) | Gemini 2.5 Pro | 15 tasks/day | No |
 | [AWS Kiro](#aws-kiro) | Claude Sonnet 4 [verify] | 50 credits/month | No |
 | [OpenCode](#opencode) | 300+ models via OpenRouter | Zen Free tier | No |
@@ -183,6 +191,7 @@ Models achieving ≥60% on SWE-bench Verified:
 | Claude Sonnet 4.6 | 79.3% | Anthropic |
 | Gemini 3.1 Pro | 77.4% | Google |
 | Claude Opus 4.5 | 82.1% | Anthropic |
+| **Claude Opus 4.7 / 4.8** [verify] | ~85% [verify] | Anthropic |
 | GPT-5.1-Codex-Max | 78.3% | OpenAI |
 | Qwen3.6-Plus | 71.2% | Alibaba |
 | Claude Sonnet 4.5 | 77.8% | Anthropic |
@@ -228,7 +237,8 @@ Ready-made combinations for different use cases. Copy-paste these configurations
 
 | Layer | Tool | Cost |
 |-------|------|------|
-| **IDE** | Trae Pro | $10/mo (600 fast, DeepSeek V4/GPT-5.4) |
+| **IDE** | Trae Lite | $3/mo ($5 basic usage + bonus) |
+| **IDE** | Trae Pro | $10/mo ($20 basic usage + bonus, SOLO mode) |
 | **API** | OpenRouter $10 | 1K req/day + BYOK 1M/month free |
 | **CLI** | Gemini CLI | v0.37.1 (Gemini 3.1 Pro/Flash) |
 | **Local** | Ollama | Free |
@@ -517,16 +527,17 @@ Full-featured integrated development environments with built-in AI assistance.
 #### [Cursor](https://cursor.com/)
 
 **Model:** GPT-5.1-Codex-Max (77.9% SWE-bench Verified) [verify]
-- **Free tier:** **500 slow premium req/mo, 2K completions/mo** (post-Dec 2025 credits)
+- **Free tier (Hobby):** Limited Agent requests + Limited Tab completions/month + 1-week Pro trial
 - Free models: Cursor Small, Deepseek v3, Gemini 2.5 Flash, GPT-4o mini (500/day limit), Grok 3 Mini Beta [verify: GPT-5.4 now paid-only]
 - Claude models removed from free tier ~June 2025
-- Free tier uses token-based usage tracking (not request-based)
+- **Credit-based billing** since Jun 2025: each paid plan includes a credit pool equal to its price; Tab completions unlimited, Auto mode effectively unlimited, credits only deplete when you manually pick a premium model
 - AI-powered code editor with autonomous coding capabilities
-- **Pro ($20/mo or $16/mo annually):** Extended Agent limits + Unlimited Tab completions + Background Agents + Maximum context windows
-- **Pro+ ($60/mo):** 3x usage on all OpenAI, Claude, Gemini models
-- **Ultra ($200/mo):** 20x usage on all models + Priority access to new features
-- **Teams ($40/user/mo):** Pro features + Centralized billing + Usage analytics + SAML/OIDC SSO
+- **Pro ($20/mo or $16/mo annually):** $20/mo credit pool + Unlimited Tab completions + Auto mode
+- **Pro+ ($60/mo or $48/mo annually):** $60/mo credit pool + 3x Pro usage + Background Agents
+- **Ultra ($200/mo or $160/mo annually):** $400/mo credit pool (20x Pro) + Priority access
+- **Teams ($40/user/mo or $32/user/mo annually):** Pro-equivalent per seat + Centralized billing + Usage analytics + SAML/OIDC SSO
 - **Enterprise (Custom):** Everything in Teams + Pooled usage + SCIM + AI code tracking API + Audit logs
+- **Bugbot add-on:** $40/user/month (Pro/Teams) — automated PR review
 
 **[Pricing](https://cursor.com/en/pricing)** | **[GPT-5.1-Codex-Max Announcement](https://forum.cursor.com/t/gpt-5-1-codex-max-available-in-cursor/145277)**
 
@@ -535,33 +546,38 @@ Full-featured integrated development environments with built-in AI assistance.
 #### [Trae](https://trae.ai/)
 
 **Models:** DeepSeek V4, GPT-4.1, GPT-4o, Gemini 2.5 Pro (Claude models removed Nov 2025)
-- 10 fast requests + 50 slow requests/month for premium models
-- 1,000 slow requests/month for advanced models
-- 5,000 auto-completions/month
-- VS Code-based IDE with AI integration
-- No credit card required for free tier
-- **Pro ($10/mo):** 600 fast + unlimited slow requests for premium models
-- Unlimited slow requests for advanced models
-- Zero rate limits and faster access to premium models
-- Extra packages available: $3-$12 for additional fast requests
-- First month available for $3
+- **New token-based pricing (effective Feb 24, 2026)** — replaced the legacy "fast/slow request" model
+- **Free:** Limited usage, 5,000 auto-completions/month, Standard queue
+- **Lite ($3/mo):** $5 basic usage + bonus, Unlimited auto-completions
+- **Pro ($10/mo):** $20 basic usage + bonus, Unlimited auto-completions, **SOLO mode** included, 10 concurrent cloud tasks
+- **Pro+ ($30/mo):** $90 basic usage + bonus (4.5x Pro), 15 concurrent cloud tasks
+- **Ultra ($100/mo):** $400 basic usage + bonus, Model early access, 20 concurrent cloud tasks
+- **7-day free Pro trial** (replaces the legacy $3 first-month deal)
+- **Annual:** Pro $90/yr (~$7.5/mo), Pro+ $270/yr (~$22.5/mo), Ultra $900/yr (~$75/mo)
+- **On-Demand Usage:** pay-as-you-go at API rates after basic + bonus usage is exhausted
+- Migration bonus: $20 in dollar usage for current Pro users who manually switch (valid 90 days)
 
-**[Pricing](https://trae.ai/pricing)** | **[Documentation](https://docs.trae.ai/ide/billing)**
+**[Pricing](https://trae.ai/pricing)** | **[Documentation](https://docs.trae.ai/ide/new-plans-and-billing)**
 
 ---
 
 #### [Windsurf](https://windsurf.com/)
 
 **Models:** OpenAI, Anthropic, Google, xAI model access
-- 25 prompt credits/month limit
-- Multiple providers (OpenAI, Claude, Gemini, xAI)
-- Credit card required
-- Can purchase add-on credits to continue
-- **Pro ($15/mo):** 500 prompt credits/month
-- **Teams ($30/user/mo):** 500 prompt credits/user/month
-- **Enterprise ($60+/user/mo):** 1,000 prompt credits/user/month
+- **New quota-based pricing (effective Mar 19, 2026)** — replaced the legacy "prompt credits" model
+- Daily + weekly usage allowance instead of monthly credit pool
+- Existing paid subscribers are grandfathered at the old price but moved to the new quota system (with a free extra week to try it)
+- **Free ($0):** Light quota + Unlimited Tab completions + 1 app deploy/day
+- **Pro ($20/mo):** Standard quota + Full model access (Opus 4.6, GPT-5.4, Sonnet 4.6) + Purchase extra usage at API price
+  - ~7-27 messages/day on Premium Plus models (Opus 4.6, GPT-5.4, GPT-5.3-Codex)
+  - ~8-101 messages/day on Premium models (Sonnet 4.6, GPT-5.2, Gemini Pro)
+- **Max ($200/mo) — NEW Mar 2026:** Heavy quota (~6x Pro) + Priority support
+  - ~42-170 messages/day on Premium Plus models
+  - ~291-1,190 messages/day on Lightweight models (Haiku, Flash)
+- **Teams ($40/user/mo):** Standard quota per seat + Centralized billing + Admin dashboard + Priority support
+- **Enterprise ($60+/user/mo):** Custom volume + SSO + Audit logs
 
-**[Pricing](https://windsurf.com/pricing)**
+**[Pricing](https://windsurf.com/pricing)** | **[Pricing Announcement (Mar 18, 2026)](https://windsurf.com/blog/windsurf-pricing-plans)**
 
 ---
 
@@ -585,15 +601,19 @@ Full-featured integrated development environments with built-in AI assistance.
 - **Quest Mode:** Fully autonomous app building
 - **Nextnew:** Tab predictions
 - Windows/macOS, VS Code-based
+- **50% launch promo ended Apr 30, 2026** — now back to standard pricing
 
-**Pricing (50% discount - Apr 2026):**
+**Pricing (standard, post-promo — effective Apr 30, 2026):**
 - **Free:** Basic models, limited messages
-- **Pro:** $10/mo (reg $20) - **2,000 credits**
-- **Pro+:** $30/mo (reg $60) - **6,000 credits**
-- **Ultra:** $100/mo (reg $200)
-- **Credits:** $0.01/credit (reg $0.02), expire 1mo
+- **Pro:** $20/mo — **2,000 credits**
+- **Pro+:** $60/mo — **6,000 credits**
+- **Ultra:** $200/mo — 20,000 credits
+- **Teams:** $40/seat/mo (was $30, +1,000 credits) — **3,000 credits/seat** (was 2,000)
+- **Personal Add-on Credits:** $20 for 1,000 credits (was $10)
+- **Credits:** $0.02/credit, expire 1mo
+- **Teams new capabilities (rollout):** BYOK, Security controls over MCP/Skills, Plugin management, Knowledge Engine
 
-**[Docs](https://docs.qoder.com/)** | **[Pricing](https://qoder.com/pricing)**
+**[Docs](https://docs.qoder.com/)** | **[Pricing](https://qoder.com/pricing)** | **[Adjustment Notice](https://docs.qoder.com/events/pricing-adjustment-notice)**
 
 ---
 
@@ -789,20 +809,24 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [GitHub Copilot](https://github.com/features/copilot/plans)
 
-**Models:** GPT-4.1, Claude Opus 3.5, Gemini 2.0 Flash, Grok Code Fast 1 (Free tier); GPT-5.1-Codex-Max available in Pro/Pro+/Business/Enterprise only
+**Models:** GPT-4.1, Claude Opus 3.5, Gemini 2.0 Flash, Grok Code Fast 1 (Free tier); GPT-5.1-Codex-Max available in Pro/Pro+/Max/Business/Enterprise only
+- **MAJOR: Usage-based billing effective Jun 1, 2026** — premium request units (PRUs) replaced by **GitHub AI Credits** (token-based)
+- **Sign-ups for Pro, Pro+, and Student temporarily paused** since Apr 20, 2026 (existing customers unaffected)
 - 50 agent mode or chat requests + 2,000 completions/month (Free tier)
 - Agent Mode with autonomous multi-step coding
-- No credit card required
+- No credit card required for Free
 - Free Copilot Pro for students/educators (GitHub Student Pack, Copilot Pro for teachers/maintainers)
-- Limited to basic features after quota
-- **Pro ($10/mo):** 300 premium requests + unlimited completions/month
-- **Pro+ ($39/mo):** 1,500 premium requests + unlimited completions/month
-- **Business ($19/user/mo):** 300 premium requests/user + unlimited completions
-- **Enterprise ($39/user/mo):** 1,000 premium requests/user + unlimited completions
-- **GPT-5.1-Codex-Max** available in public preview (Dec 4, 2025) for Pro, Pro+, Business, Enterprise - **NOT in free tier**
-- Overage billing available at $0.04/request
+- Code completions and Next Edit suggestions remain included on all plans and do not consume AI Credits
+- **Pro ($10/mo):** $15 monthly AI Credits + unlimited completions + cloud agent
+- **Pro+ ($39/mo):** $70 monthly AI Credits + 1,500 premium req equivalent + Opus access
+- **Max ($100/mo) — NEW Jun 2026:** $200 monthly AI Credits + Priority access to new models + 2.9x Pro+ usage
+- **Business ($19/user/mo):** $19 in AI Credits (promo: $30 in Jun/Jul/Aug 2026) + unlimited completions
+- **Enterprise ($39/user/mo):** $39 in AI Credits (promo: $60 in Jun/Jul/Aug 2026) + unlimited completions
+- **GPT-5.1-Codex-Max** available in public preview (Dec 4, 2025) for Pro, Pro+, Max, Business, Enterprise - **NOT in free tier**
+- Copilot code review now also consumes GitHub Actions minutes (in addition to AI Credits)
+- Overage billing available at $0.04/request equivalent (token-based)
 
-**[Plans Details](https://docs.github.com/en/copilot/get-started/plans-for-github-copilot)** | **[Agent Mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode)** | **[GPT-5.1-Codex-Max Preview](https://github.blog/changelog/2025-12-04-openais-gpt-5-1-codex-max-is-now-in-public-preview-for-github-copilot/)**
+**[Plans Details](https://docs.github.com/en/copilot/get-started/plans-for-github-copilot)** | **[Usage-Based Billing Announcement (Apr 27, 2026)](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/)** | **[Agent Mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode)**
 
 ---
 
@@ -823,13 +847,17 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [AWS Kiro](https://kiro.dev/)
 
-**Models:** Claude 4 Sonnet, Claude 3.7 Sonnet (AWS-hosted)
+**Models:** Claude Opus 4.7 / 4.8, Claude Sonnet 4.5 / 4.6, Claude Haiku 4.5 (AWS-hosted via Bedrock)
 - 50 credits/month (Free tier)
 - 14-day welcome bonus: 500 credits
 - No credit card required
 - **Pro ($20/mo):** 1,000 credits
 - **Pro+ ($40/mo):** 2,000 credits
 - **Power ($200/mo):** 10,000 credits
+- $0.04/credit overage rate
+- spec-driven development methodology (Requirements → Design → Tasks)
+- Agent Hooks + Steering + Powers for automation
+- Kiro CLI 2.0 (Apr 2026, Windows + headless) and v0.12 (May 2026, parallel tasks)
 
 **[Pricing](https://kiro.dev/pricing/)** | **[Introduction Blog](https://kiro.dev/blog/introducing-kiro/)**
 
@@ -844,6 +872,9 @@ Command-line tools for AI-assisted coding in your terminal.
 - Must upgrade to Pro for continued access
 - Perpetual free tier
 - **Pro ($19/mo):** Increased limits for agentic requests
+- **Business ($25/user/mo):** Organization-wide admin + security
+- **Per-request overage:** $0.003/code-generation request after 1,000 included
+- **End-of-support Apr 30, 2027** — replaced by AWS Kiro (new signups stopped May 15, 2026)
 - Usage may be adjusted based on regional factors and usage patterns
 
 **[Pricing](https://aws.amazon.com/q/developer/pricing/)**
@@ -1044,10 +1075,10 @@ These services provide API access to coding-optimized models for tools like Curs
 
 | IDE | Entry Tier | Credits/Requests | Key Features |
 |-----|------------|------------------|--------------|
-| [Cursor](https://cursor.com/) | Pro ($20/mo) | Extended Agent limits | Unlimited completions |
-| [Trae](https://trae.ai/) | Pro ($10/mo) | 600 fast + unlimited slow | Zero rate limits |
-| [Windsurf](https://windsurf.com/) | Pro ($20/mo) | 500 prompt credits | Multi-provider |
-| [Qoder](https://qoder.com/) | Pro ($10/mo - 50% off) | 2,000 credits | Quest Mode, Experts Mode |
+| [Cursor](https://cursor.com/) | Pro ($20/mo) | $20/mo credit pool | Unlimited completions, Auto mode |
+| [Trae](https://trae.ai/) | Lite ($3/mo) / Pro ($10/mo) | $5 / $20 basic usage + bonus | SOLO mode, 5-tier token system |
+| [Windsurf](https://windsurf.com/) | Pro ($20/mo) | Standard quota (daily/weekly) | Multi-provider, Max $200 tier |
+| [Qoder](https://qoder.com/) | Pro ($20/mo) | 2,000 credits | Quest Mode, Experts Mode |
 | [Codeium](https://codeium.com/) | Pro ($10/mo) | Unlimited | Claude 4.6 [verify], GPT-5.4 [verify] |
 | [Tabnine](https://www.tabnine.com/) | Pro ($12/mo) | Enhanced completions | 600+ languages |
 | [JetBrains AI](https://www.jetbrains.com/ai/) | AI Pro ($15/mo) | Increased cloud quota | Unlimited local models |
@@ -1057,13 +1088,13 @@ These services provide API access to coding-optimized models for tools like Curs
 
 | Tool | Entry Tier | Credits/Requests | Key Features |
 |------|------------|------------------|--------------|
-| [Claude Code](https://www.anthropic.com/claude-code) | Pro ($20/mo) | ~225 messages/5h | Sonnet access [verify] |
+| [Claude Code](https://www.anthropic.com/claude-code) | Pro ($20/mo) | ~225 messages/5h | Sonnet 4.6 + Opus 4.6 [verify] |
 | [Warp](https://warp.dev/) | Build ($20/mo) | 1,500 credits/month | BYOK available |
-| [GitHub Copilot](https://github.com/features/copilot) | Pro ($10/mo) | 300 premium req/month | Unlimited completions |
+| [GitHub Copilot](https://github.com/features/copilot) | Pro ($10/mo) | $15 monthly AI Credits | Usage-based billing since Jun 1, 2026 |
 | [Rovo Dev CLI](https://www.atlassian.com/rovo) | Jira Standard ($7.53/mo) | 20M tokens/day | 4x free tier |
 | [Jules](https://jules.google/) | Pro ($19.99/mo) | 100 tasks/day | 5x free limits |
 | [OpenAI Codex CLI](https://github.com/openai/codex) | ChatGPT Plus ($20/mo) | 30-150 msg/5h | GPT-5.1-Codex-Max |
-| [Amazon Q Developer](https://aws.amazon.com/q/developer/) | Pro ($19/mo) | Increased agentic limits | AWS-hosted Claude |
+| [Amazon Q Developer](https://aws.amazon.com/q/developer/) | Pro ($19/mo) | Increased agentic limits | AWS-hosted Claude (EOL Apr 2027) |
 | [Kilo Code](https://kilocode.ai/) | Pay-as-you-go | Up to $25 signup credits | No markup on models |
 
 ---
@@ -1637,10 +1668,14 @@ API pricing for budget planning. Sorted by input cost.
 | **Gemini 2.5 Pro** | Google | $1.25 | $10.00 | $0.625 | High quality, 1M context |
 | **GPT-4.1** | OpenAI | $2.00 | $8.00 | - | General purpose |
 | **GPT-5.4** | OpenAI | $2.50 | $10.00 | $1.25 | Latest OpenAI model |
-| **Claude Sonnet 4** | Anthropic | $3.00 | $15.00 | $0.60 | Best coding, reasoning |
-| **Claude Opus 4.6** | Anthropic | $5.00 | $25.00 | $2.50 | Complex reasoning |
+| **Claude Sonnet 4.6** | Anthropic | $3.00 | $15.00 | $0.30 | Best coding, reasoning |
+| **Claude Sonnet 4.5** | Anthropic | $3.00 | $15.00 | $0.30 | Coding, agent workflows |
+| **Claude Opus 4.6 / 4.7 / 4.8** | Anthropic | $5.00 | $25.00 | $0.50 | Complex reasoning |
+| **Claude Fable 5 / Mythos 5** | Anthropic | $10.00 | $50.00 | $1.00 | Limited availability (Glasswing) |
 
 > 💡 **Pro tip:** DeepSeek's 90% cache discount makes it cheapest for repetitive tasks with long prompts.
+>
+> ⚠️ **Anthropic lineup note:** Claude Haiku 4.5 ($1/$5) was added in 2026 for high-frequency lightweight tasks. Claude Sonnet 4 (deprecated) retains $3/$15. Regional/multi-region Bedrock endpoints carry a 10% premium. Opus 4.7+ uses a new tokenizer that can use up to 35% more tokens for the same text.
 
 ---
 
@@ -1662,9 +1697,10 @@ Don't just use SWE-bench - match models to your specific task.
 | Model | Why | Free Tier |
 |-------|-----|-----------|
 | **DeepSeek R1** | Specialized reasoning model, math/logic | DeepSeek API |
-| **Claude Opus 4.6** | **84.2%** SWE-bench, best for complex architecture | Claude Code Pro |
+| **Claude Opus 4.6 / 4.7 / 4.8** | **84.2%** SWE-bench (4.6), best for complex architecture | Claude Code Pro |
 | **Gemini 3.1 Pro** | **77.4%** SWE-bench, 2M context for deep analysis | 100 req/day |
 | **o3-mini / o1** | OpenAI reasoning models, step-by-step | ChatGPT Plus |
+| **Claude Fable 5 / Mythos 5** | Anthropic Glasswing (limited availability), top tier | API only |
 
 ### 💰 Cheap Bulk Generation
 
@@ -1911,4 +1947,4 @@ MIT © [ShaikhWarsi](https://github.com/ShaikhWarsi)
 
 ---
 
-*Last updated: April 11, 2026 • PRs/issues welcome*
+*Last updated: June 16, 2026 • PRs/issues welcome*
