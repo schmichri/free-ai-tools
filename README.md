@@ -1265,6 +1265,7 @@ Visual orchestration tools for building autonomous AI agents without coding.
 |----------|-----------|----------|--------------|
 | [Make](https://make.com) (Integromat) | 1,000 ops/month | Visual builders | Drag-and-drop AI Agents, 3,000+ app integrations |
 | [n8n](https://n8n.io) | Unlimited (self-hosted) | Technical teams | Self-hosted RAG systems, private data automation |
+| [Ypipe](https://ypipe.com) | Free & Open Source (Local) | Local air-gapped workflows | Zero-dependency desktop app, Model Context Protocol (MCP) orchestration engine, secure private workflows, [GitHub](https://github.com/iunera/ypipe) |
 | [Gumloop](https://gumloop.com) | 2,000 credits/month | No-code agents | Natural-language builder, "Gummie" troubleshooting agent |
 | [Relay.app](https://relay.app) | Generous free plan | Beginners | Simple agentic workflows |
 | [Activepieces](https://activepieces.com) | 1,000 tasks/month | Open-source | Flat pricing, self-hostable |
